@@ -36,8 +36,8 @@
 				
 				
 				<br> Price Range: <br>
-				<input type="range" min="0" max="150">
-				<p>$40</p>
+				<input type="range" id="price" min="0" max="150">
+				<p id="price-num">$40</p>
 				
 				</form>
 			</div>
@@ -66,12 +66,14 @@
 	
 		
 		<script>
-			function myFunction() {
-				var x = document.createElement("INPUT");
-				x.setAttribute("type", "checkbox");
-				document.body.appendChild(x);
+			var slider = document.getElementById("price");
+			var output = document.getElementById("price-num");
+			output.innerHTML = slider.value;
+			
+			slider.oninput = function() {
+				output.innerHTML = this.value;
 			}
-</script>
+		</script>
 		
 	</body>
 </html>
