@@ -13,6 +13,7 @@
 	<body>
 	
 		<div id="header">
+			<img src="Screen%20Shot%202018-05-19%20at%2010.14.08%20AM%20(1).png">
 			<h1>Target Gift App</h1>
 		</div>
 		
@@ -72,6 +73,26 @@
 			
 			slider.oninput = function() {
 				output.innerHTML = this.value;
+			}
+		</script>
+		
+		<script>
+		
+			var item = function(name, price, tags) {
+				this.name = name;
+				this.price = price;
+				this.tags = tags;
+			}
+			
+			function displayResults() {
+				for (x in results) {
+					var newResult = document.createElement("td");
+					var name = document.createTextNode(x.name);
+					newResult.appendChild(node);
+					
+					var table = document.getElementsByTagName("tr")[0];
+					table.appendChild(newResult);
+				}
 			}
 		</script>
 		
