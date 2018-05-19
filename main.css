@@ -1,5 +1,5 @@
 * {	
-	font-family: sans-serif;
+	font-family: Arimo, sans-serif;
 	border-radius: 3px;
 }
 
@@ -29,6 +29,8 @@ body div {
 h1 {
 	text-align: center;
 	display: inline;
+	vertical-align: 30px;
+	margin-left: 10px;
 }
 
 #content {
