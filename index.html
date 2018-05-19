@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<title>Target Gifts</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Hackathon @ Target">
+		<link rel="stylesheet" href="main.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	
+		<div id="header">
+			<h1>Target Gift App</h1>
+		</div>
+		
+		
+		<div id="content">
+			<div id="sidebar" class="page">
+				<form>
+					
+				<br> Age: <br>
+				<input type="checkbox"> Child <br>
+				<input type="checkbox"> Teen <br>
+				<input type="checkbox"> Adult <br>
+				
+				<br> Interests: <br>
+				<input type="checkbox"> Sports <br>
+				<input type="checkbox"> Books <br>
+				<input type="checkbox"> Clothes <br>
+				<input type="checkbox"> Crafts <br>
+				<input type="checkbox"> Home Decor <br>
+				<input type="checkbox"> Beauty <br>
+				
+				
+				<br> Price Range: <br>
+				<input type="range" min="0" max="150">
+				<p>$40</p>
+				
+				</form>
+			</div>
+			
+			<div id="item-list" class="page">
+				<table style="width:100%">
+  					<tr>
+						<td>Jill</td>
+						<td>Smith</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Eve</td>
+						<td>Jackson</td>
+						<td>94</td>
+					</tr>
+					<tr>
+						<td>John</td>
+						<td>Doe</td>
+						<td>80</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+	
+		
+		<script>
+			function myFunction() {
+				var x = document.createElement("INPUT");
+				x.setAttribute("type", "checkbox");
+				document.body.appendChild(x);
+			}
+</script>
+		
+	</body>
+</html>
