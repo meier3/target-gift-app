@@ -36,3 +36,10 @@ h1 {
 	width: 70%;
 	float: right;
 }
+
+td {
+	padding: 5px;
+	border: 1px solid black;
+	height: 130px;
+	width: 50px;	
+}
