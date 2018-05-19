@@ -85,16 +85,30 @@
 			
 			slider.oninput = function() {
 				output.innerHTML = this.value;
+				changePrice();
 			}
-		</script>
-		
-		<script>
 		
 			var item = function(name, price, tags) {
 				this.name = name;
 				this.price = price;
 				this.tags = tags;
 			}
+			
+			var items = [item("Shot Glass", 5, "adult" "party"), item("Football", 10, "child", "sports")
+item("Assorted Rings", 13, "teen", "jewelry"), item("Beginner Guitar", 150, "child", "music"), item("Initial Necklace", 20, "teen", "beauty"), item("Scented Candle", 15, "adult", "home"), item("Cards Against Humanity", "20" "teen" "games"), item("Action Figures", 50, "child", "superheroes"), item("Nail Polish Set", 25, "teen", "makeup"), item("Harry Potter Book Set", 25, "child", "fantasy"), item("Adult Coloring Bookl", 10, "adult", "crafts"), item("Succulent", 15, "adult", "decor")];
+			
+			var results = [];
+			
+			function changePrice() {
+				var p = slider.value;
+				for (i in items) {
+					if (i.price <= p) {
+						results.push(i);
+					}
+				}
+				displayResults();
+			}
+			
 			
 			function displayResults() {
 				for (x in results) {
