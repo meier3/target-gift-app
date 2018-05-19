@@ -19,21 +19,24 @@ body div {
 	height: 100px;
 	font-size: 30px;
 	color: #d82013;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 td img {
 	height: 100%;
+	margin-bottom: 5px;
+	vertical-align: top;
 }
 
 td {
 	text-align: center;
-	vertical-align: bottom
+	vertical-align: bottom;
 }
 
 #header img {
 	height: 90%;
 	margin: 5px;
+	border.-radius: 1000px
 }
 
 h1 {
@@ -41,10 +44,7 @@ h1 {
 	display: inline;
 	vertical-align: 30px;
 	margin-left: 10px;
-}
-
-#content {
-	.border: 1px solid black;
+	letter-spacing: 3px;
 }
 
 .page {
@@ -54,20 +54,34 @@ h1 {
 }
 
 #sidebar {
-	height: 100%;
-	width: 25%;
+	width: 23%;
 	float: left;
+	padding: 15px;
 }
 
 #item-list {
-	height: 100%;
+	heig.ht: 700px;
 	width: 70%;
 	float: right;
 }
 
+#but {
+	width: 100%;
+	text-align: center;
+	margin-bottom: -10px;
+}
+
+button {
+}
+
 td {
-	padding: 5px;
-	border: 1px solid black;
+	padding: 10px;
+	border: 1px solid #ddd;
+	back.ground-color: #fff;
 	height: 130px;
 	width: 50px;	
+}
+
+hr {
+	margin: 15px;
 }
