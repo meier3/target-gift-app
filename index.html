@@ -55,26 +55,44 @@
 			<div id="item-list" class="page">
 				<table style="width:100%">
   					<tr>
-						<td>Jill</td>
-						<td>Smith</td>
-						<td>50</td>
+						<td>
+							<img src="14493600.jpg"><br>
+							Harry Potter Books
+						</td>
+						<td>
+							<img src="14782329.jpg"><br>Candle
+						</td>
+						<td>
+							<img src="15419902.jpg"><br>Football
+						</td>
 					</tr>
 					<tr>
-						<td>Eve</td>
-						<td>Jackson</td>
-						<td>94</td>
+						<td>
+							<img src="15818985.jpg"><br>Nail Polish
+						</td>
+						<td>
+							<img src="16728709.jpg"><br>Shot Glasses
+						</td>
+						<td>
+							<img src="50128761.jpg"><br>Coloring Book
+						</td>
 					</tr>
 					<tr>
-						<td>John</td>
-						<td>Doe</td>
-						<td>80</td>
+						<td>
+							<img src="51078183.jpg"><br>Cards Against Humanity
+						</td>
+						<td>
+							<img src="52320294.jpg"><br>Assorted Rings
+						</td>
+						<td>
+							<img src="52360495.jpg"><br>Action Figures
+						</td>
 					</tr>
 				</table>
 
 			</div>
 		</div>
 	
-		
 		<script>
 			var slider = document.getElementById("price");
 			var output = document.getElementById("price-num");
@@ -85,17 +103,19 @@
 				changePrice();
 			}
 		
-			var item = function(name, price, tags) {
+			var item = function(name, price, age, tags) {
 				this.name = name;
 				this.price = price;
+				this.age = age;
 				this.tags = tags;
 			}
 			
-			var items = [item("Shot Glass", 5, "adult" "party"), item("Football", 10, "child", "sports")
-item("Assorted Rings", 13, "teen", "jewelry"), item("Beginner Guitar", 150, "child", "music"), item("Initial Necklace", 20, "teen", "beauty"), item("Scented Candle", 15, "adult", "home"), item("Cards Against Humanity", "20" "teen" "games"), item("Action Figures", 50, "child", "superheroes"), item("Nail Polish Set", 25, "teen", "makeup"), item("Harry Potter Book Set", 25, "child", "fantasy"), item("Adult Coloring Bookl", 10, "adult", "crafts"), item("Succulent", 15, "adult", "decor")];
+			 var items = [item("Shot Glass", 5, "adult", "party"), item("Football", 10, "child", "sports"), item("Assorted Rings", 13, "teen", "jewelry"), item("Beginner Guitar", 150, "child", "music"), item("Initial Necklace", 20, "teen", "beauty"), item("Scented Candle", 15, "adult", "home"), item("Cards Against Humanity", 20, "teen", "games"), item("Action Figures", 50, "child", "superheroes"), item("Nail Polish Set", 25, "teen", "makeup"), item("Harry Potter Book Set", 25, "child", "fantasy"), item("Adult Coloring Book", 10, "adult", "crafts"), item("Succulent", 15, "adult", "decor")];
+			
+			//var items = [{name:"Shot Glass", price:5, :"adult",}]
 			
 			var results = [];
-			
+		
 			function changePrice() {
 				var p = slider.value;
 				for (i in items) {
@@ -109,14 +129,14 @@ item("Assorted Rings", 13, "teen", "jewelry"), item("Beginner Guitar", 150, "chi
 			
 			function displayResults() {
 				for (x in results) {
-					var newResult = document.createElement("td");
+					var newResult = document.createElement("tr");
 					var name = document.createTextNode(x.name);
 					newResult.appendChild(node);
 					
-					var table = document.getElementsByTagName("tr")[0];
+					var table = document.getElementsByTagName("table")[0];
 					table.appendChild(newResult);
 				}
-			}
+			} 
 		</script>
 		
 	</body>
